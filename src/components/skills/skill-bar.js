@@ -18,11 +18,11 @@ export default styled(SkillBar)`
   
   .skill__bar {
     height: 10px;
-    background-color: lightgrey;
+    background-color: rgba(0, 0, 255, .2);
     padding: 1px;
   }
   .skill__level {
-    background-color: #25303B;
+    background-color: #ffc400;
        width: ${p => p.level || 0}%;
        height: 8px;
   }

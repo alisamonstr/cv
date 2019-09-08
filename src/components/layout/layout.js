@@ -7,7 +7,6 @@ import './layout.css'
 
 const Layout = ({ children }) => (
   <React.Fragment>
-    <Header headerLinks={siteConfig.headerLinks} />
     <div>{children}</div>
   </React.Fragment>
 )

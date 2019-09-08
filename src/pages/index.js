@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaInstagram } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 
 import Layout from '../components/layout'
@@ -52,11 +52,8 @@ class Home extends React.Component {
                   {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
                     <FaGithub className="social-icon" size="32" />
                   </a>}
-                  {siteConfig.social.linkedin && <a className="social-link linkedin" href={siteConfig.social.linkedin}>
-                    <FaLinkedin className="social-icon" size="32" />
-                  </a>}
                   {siteConfig.social.twitter && <a className="social-link twitter" href={siteConfig.social.twitter}>
-                    <FaTwitter className="social-icon" size="32" />
+                    <FaInstagram className="social-icon" size="32" />
                   </a>}
                   {siteConfig.social.email && <a className="social-link email" href={`mailto:${siteConfig.social.email}`}>
                     <FaEnvelope className="social-icon" size="32" />
@@ -95,9 +92,10 @@ export default styled(Home)`
   }
 
   .avatar__image {
-    box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px #ffc400, -1em -5px rgba(0, 0, 255, .2);
     max-width: 200px;
-    border-radius: 100px;
+    border-radius: 35px;
+    border: 5px solid white;
     margin: 0 auto 24px;
   }
 
@@ -108,7 +106,7 @@ export default styled(Home)`
 
   .social-link {
     padding: 8px;
-    color: #555;
+    color: #ffc400;
   }
 
   a.social-link.twitter:hover {
