@@ -38,7 +38,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "gh-pages": "2.0.1",
+    "surge": "^0.21.3",
     "prettier": "1.17.0"
   },
   "repository": {
