@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaEnvelope, FaInstagram } from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaInstagram, FaTelegramPlane } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 
 import Layout from '../components/layout'
@@ -52,12 +52,16 @@ class Home extends React.Component {
                   {siteConfig.social.github && <a className="social-link github" href={siteConfig.social.github}>
                     <FaGithub className="social-icon" size="32" />
                   </a>}
-                  {siteConfig.social.twitter && <a className="social-link twitter" href={siteConfig.social.twitter}>
+                  {siteConfig.social.instagram && <a className="social-link instagram" href={siteConfig.social.instagram}>
                     <FaInstagram className="social-icon" size="32" />
                   </a>}
                   {siteConfig.social.email && <a className="social-link email" href={`mailto:${siteConfig.social.email}`}>
                     <FaEnvelope className="social-icon" size="32" />
                   </a>}
+                  {siteConfig.social.telegram && <a className="social-link telegram" href={siteConfig.social.telegram}>
+                    <FaTelegramPlane className="social-icon" size="32" />
+                  </a>}
+
                 </div>
               </Col>
             </Row>
@@ -109,7 +113,7 @@ export default styled(Home)`
     color: #ffc400;
   }
 
-  a.social-link.twitter:hover {
+  a.social-link.instagram:hover {
     color: #1da1f2;
   }
 
@@ -117,11 +121,10 @@ export default styled(Home)`
     color: #24292e;
   }
 
-  a.social-link.linkedin:hover {
-    color: #0077B5;
-  }
-
   a.social-link.email:hover {
     color: #c23a2b;
+  }
+   a.social-link.telegram:hover {
+    color: #1da1f2;
   }
 `
